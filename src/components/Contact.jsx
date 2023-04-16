@@ -8,6 +8,9 @@ import { SectionWrapper } from "../hoc";
 import { git, github } from "../assets";
 import { slideIn } from "../utils/motion";
 
+import discord from "/src/assets/discord.png";
+import linkedin from "/src/assets/linkedin.png";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -122,7 +125,7 @@ const Contact = () => {
 
             <div className="flex grid-row">
               <div
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-5"
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2"
                 onClick={() => window.open("https://github.com/viniciusvinny233", "_blank")}
               >
                 <img
@@ -133,11 +136,11 @@ const Contact = () => {
 
               </div>
               <div
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-5"
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2"
                 onClick={() => window.open("https://www.linkedin.com/in/marcosvinicius-developer/", "_blank")}
               >
                 <img
-                  src="/src/assets/tech/linkedin.png"
+                  src={linkedin}
                   alt="Linkedin"
                   className="w-1/2 h-1/2 object-contain"
                 />
@@ -148,7 +151,7 @@ const Contact = () => {
                 onClick={() => window.open("https://www.discordapp.com/users/354444801917059073", "_blank")}
               >
                 <img
-                  src="/src/assets/tech/discord.png"
+                  src={discord}
                   alt="Discord"
                   id="iconContato"
                   className="w-10 h-1/2 object-contain"

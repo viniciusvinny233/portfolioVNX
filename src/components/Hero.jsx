@@ -3,6 +3,8 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import Tilt from "react-tilt";
 
+import marcosVinicius from "/src/assets/marcosVinicius.png";
+
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -30,7 +32,7 @@ const Hero = () => {
             transition={{ type: "spring", stiffness: 500 }}
           >
             <div className="">
-              <img src="src/assets/3x4.png" alt="" className="image-shadow-gradient" width="450" />
+              <img src={marcosVinicius} alt="" className="image-shadow-gradient" width="450" />
             </div>
           </motion.div>
         </Tilt>

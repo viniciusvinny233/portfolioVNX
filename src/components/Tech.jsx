@@ -176,9 +176,6 @@ const SkillCard = ({ skill }) => (
         <img src={skill.icon} alt={skill.name} className="w-12 h-12 mb-4" />
         <div className="mt-2">
           <span className={styles.sectionSubTextTech}>{skill.nivel}</span>
-          <div className="mt-2">
-            <ProgressBar level={skill.level} />
-          </div>
         </div>
       </div>
     </motion.div>
