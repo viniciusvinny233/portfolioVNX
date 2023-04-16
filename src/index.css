@@ -112,6 +112,12 @@
   margin-right: 15px;
 }
 
+form {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 
 .slider-container {
   margin-left: auto;
