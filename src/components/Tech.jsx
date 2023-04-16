@@ -1,0 +1,257 @@
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
+
+import Tilt from "react-tilt";
+
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+
+import javascriptIcon from "/src/assets/tech/javascript.png";
+import htmlIcon from "/src/assets/tech/html.png";
+import cssIcon from "/src/assets/tech/css.png";
+import reactIcon from "/src/assets/tech/reactjs.png";
+import typescriptIcon from "/src/assets/tech/typescript.png";
+import bootstrapIcon from "/src/assets/tech/bootstrap.svg";
+import jqueryIcon from "/src/assets/tech/jquery.png";
+import sassIcon from "/src/assets/tech/sass.png";
+import nodejsIcon from "/src/assets/tech/nodejs.png";
+import figmaIcon from "/src/assets/tech/figma.png";
+import gitIcon from "/src/assets/tech/git.png";
+import azureIcon from "/src/assets/tech/azure.svg";
+import jiraIcon from "/src/assets/tech/jira.svg";
+import photoshopIcon from "/src/assets/tech/photoshop.svg";
+import dartIcon from "/src/assets/tech/dart.svg";
+import flutterIcon from "/src/assets/tech/flutter.svg";
+import sqlIcon from "/src/assets/tech/sql.svg";
+
+// Importe os outros ícones das linguagens e ferramentas
+
+const skills = [
+  {
+    category: "Front-end",
+    items: [
+      {
+        name: "HTML",
+        icon: htmlIcon,
+        nivel: "Senior",
+        level: 90,
+      },
+      {
+        name: "CSS",
+        icon: cssIcon,
+        nivel: "Senior",
+        level: 80,
+      },
+      {
+        name: "JavaScript",
+        icon: javascriptIcon,
+        nivel: "Senior",
+        level: 80,
+      },
+      {
+        name: "ReactJS",
+        icon: reactIcon,
+        nivel: "Pleno",
+        level: 60,
+      },
+      {
+        name: "Typescript",
+        icon: typescriptIcon,
+        nivel: "Junior",
+        level: 30,
+      },
+      {
+        name: "Bootstrap",
+        icon: bootstrapIcon,
+        nivel: "Pleno",
+        level: 60,
+      },
+      {
+        name: "jQuery",
+        icon: jqueryIcon,
+        nivel: "Junior",
+        level: 40,
+      },
+      {
+        name: "SASS",
+        icon: sassIcon,
+        nivel: "Pleno",
+        level: 65,
+      },
+      // Adicione outras linguagens e ferramentas de front-end
+    ],
+  },
+  {
+    category: "Back-end",
+    items: [
+      {
+        name: "NodeJS",
+        icon: nodejsIcon,
+        nivel: "Pleno",
+        level: 55,
+      },
+      {
+        name: "MySQL",
+        icon: sqlIcon,
+        nivel: "Junior",
+        level: 35,
+      },
+    ],
+  },
+  {
+    category: "Mobile",
+    items: [
+      {
+        name: "Dart",
+        icon: dartIcon,
+        nivel: "Senior",
+        level: 90,
+      },
+      {
+        name: "Flutter",
+        icon: flutterIcon,
+        nivel: "Senior",
+        level: 90,
+      },
+    ],
+  },
+  {
+    category: "Ferramentas",
+    items: [
+      {
+        name: "Figma",
+        icon: figmaIcon,
+        nivel: "Junior",
+        level: 30,
+      },
+      {
+        name: "Git",
+        icon: gitIcon,
+        nivel: "Senior",
+        level: 90,
+      },
+      {
+        name: "Azure",
+        icon: azureIcon,
+        nivel: "Junior",
+        level: 35,
+      },  
+      {
+        name: "Photoshop",
+        icon: photoshopIcon,
+        nivel: "Senior",
+        level: 90,
+      },
+    ],
+  },
+];
+
+const ProgressBar = ({ level }) => {
+  const width = 130;
+
+  return (
+    <div
+      className="relative bg-gray-300 h-3 rounded-md"
+      style={{ width: `${width}px` }}
+    >
+      <div
+        className="absolute left-0 bg-green-500 rounded-md"
+        style={{ width: `${(level / 100) * width}px`, height: "100%" }}
+      ></div>
+    </div>
+  );
+};
+
+const SkillCard = ({ skill }) => (
+  <Tilt className="xs:w-[250px] w-full">
+    <motion.div
+      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 500 }}
+    >
+      <div className="bg-tertiary rounded-[20px] p-6 sm:w-[250px] w-full flex flex-col items-center">
+        <h3 className="text-[20px] font-bold">{skill.name}</h3>
+        <img src={skill.icon} alt={skill.name} className="w-12 h-12 mb-4" />
+        <div className="mt-2">
+          <span className={styles.sectionSubTextTech}>{skill.nivel}</span>
+          <div className="mt-2">
+            <ProgressBar level={skill.level} />
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  </Tilt>
+);
+
+const Tech = () => {
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Linguagens e Ferramentas.</p>
+        <h2 className={styles.sectionHeadText}>Habilidades.</h2>
+      </motion.div>
+
+      <div className="mt-20">
+        {skills.map((skillCategory, index) => {
+          // Ajuste para exibir Back-end e Mobile na mesma linha
+          if (skillCategory.category === "Back-end") {
+            return (
+              <div key={index} className="mb-14">
+                <div className="flex justify-around">
+                  <h3 className="text-[24px] font-bold text-white mb-7">
+                    {skillCategory.category}
+                  </h3>
+                  <h3 className="text-[24px] font-bold text-white mb-7">
+                    {skills[index + 1].category}
+                  </h3>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-7">
+                  {skillCategory.items.map((skill, index) => (
+                    <motion.div
+                      key={index}
+                      variants={fadeIn("up", "spring", index * 0.1, 0.5)}
+                    >
+                      <SkillCard skill={skill} />
+                    </motion.div>
+                  ))}
+                  {skills[index + 1].items.map((skill, index) => (
+                    <motion.div
+                      key={index}
+                      variants={fadeIn("up", "spring", index * 0.1, 0.5)}
+                    >
+                      <SkillCard skill={skill} />
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            );
+          } else if (skillCategory.category === "Mobile") {
+            return null;
+          } else {
+            return (
+              <div key={index} className="mb-14">
+                <h3 className="text-[24px] font-bold text-white mb-7">
+                  {skillCategory.category}
+                </h3>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-7">
+                  {skillCategory.items.map((skill, index) => (
+                    <motion.div
+                      key={index}
+                      variants={fadeIn("up", "spring", index * 0.1, 0.5)}
+                    >
+                      <SkillCard skill={skill} />
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+        })}
+      </div>
+    </>
+  );
+};
+
+export default SectionWrapper(Tech, "tech");
