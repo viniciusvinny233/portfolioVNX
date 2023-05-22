@@ -25,8 +25,9 @@ import photoshopIcon from "/src/assets/tech/photoshop.svg";
 import dartIcon from "/src/assets/tech/dart.svg";
 import flutterIcon from "/src/assets/tech/flutter.svg";
 import sqlIcon from "/src/assets/tech/sql.svg";
+import nextIcon from "/src/assets/tech/nextjs.png";
+import firebaseIcon from "/src/assets/tech/firebase.png";
 
-// Importe os outros ícones das linguagens e ferramentas
 
 const skills = [
   {
@@ -59,7 +60,7 @@ const skills = [
       {
         name: "Typescript",
         icon: typescriptIcon,
-        nivel: "Junior",
+        nivel: "Pleno",
         level: 30,
       },
       {
@@ -71,7 +72,7 @@ const skills = [
       {
         name: "jQuery",
         icon: jqueryIcon,
-        nivel: "Junior",
+        nivel: "Pleno",
         level: 40,
       },
       {
@@ -80,7 +81,6 @@ const skills = [
         nivel: "Pleno",
         level: 65,
       },
-      // Adicione outras linguagens e ferramentas de front-end
     ],
   },
   {
@@ -93,10 +93,51 @@ const skills = [
         level: 55,
       },
       {
+        name: "NextJS",
+        icon: nextIcon,
+        nivel: "Pleno",
+        level: 55,
+      },
+      {
+        name: "Firebase",
+        icon: firebaseIcon,
+        nivel: "Pleno",
+        level: 55,
+      },
+      {
         name: "MySQL",
         icon: sqlIcon,
         nivel: "Junior",
         level: 35,
+      },
+    ],
+  },
+  {
+    category: "Ferramentas",
+    items: [
+      {
+        name: "Figma",
+        icon: figmaIcon,
+        nivel: "Pleno",
+        level: 30,
+      },
+      {
+        name: "Git",
+        icon: gitIcon,
+        nivel: "Senior",
+        level: 90,
+      },
+      {
+        name: "Azure",
+        icon: azureIcon,
+        nivel: "Junior",
+        level: 35,
+      },
+      {
+        name: "Photoshop",
+        icon: photoshopIcon,
+        nivel: "Senior",
+        level: 90,
       },
     ],
   },
@@ -112,35 +153,6 @@ const skills = [
       {
         name: "Flutter",
         icon: flutterIcon,
-        nivel: "Senior",
-        level: 90,
-      },
-    ],
-  },
-  {
-    category: "Ferramentas",
-    items: [
-      {
-        name: "Figma",
-        icon: figmaIcon,
-        nivel: "Junior",
-        level: 30,
-      },
-      {
-        name: "Git",
-        icon: gitIcon,
-        nivel: "Senior",
-        level: 90,
-      },
-      {
-        name: "Azure",
-        icon: azureIcon,
-        nivel: "Junior",
-        level: 35,
-      },  
-      {
-        name: "Photoshop",
-        icon: photoshopIcon,
         nivel: "Senior",
         level: 90,
       },
@@ -192,59 +204,23 @@ const Tech = () => {
 
       <div className="mt-20">
         {skills.map((skillCategory, index) => {
-          // Ajuste para exibir Back-end e Mobile na mesma linha
-          if (skillCategory.category === "Back-end") {
-            return (
-              <div key={index} className="mb-14">
-                <div className="flex justify-around">
-                  <h3 className="text-[24px] font-bold text-white mb-7">
-                    {skillCategory.category}
-                  </h3>
-                  <h3 className="text-[24px] font-bold text-white mb-7">
-                    {skills[index + 1].category}
-                  </h3>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-7">
-                  {skillCategory.items.map((skill, index) => (
-                    <motion.div
-                      key={index}
-                      variants={fadeIn("up", "spring", index * 0.1, 0.5)}
-                    >
-                      <SkillCard skill={skill} />
-                    </motion.div>
-                  ))}
-                  {skills[index + 1].items.map((skill, index) => (
-                    <motion.div
-                      key={index}
-                      variants={fadeIn("up", "spring", index * 0.1, 0.5)}
-                    >
-                      <SkillCard skill={skill} />
-                    </motion.div>
-                  ))}
-                </div>
+          return (
+            <div key={index} className="mb-14">
+              <h3 className="text-[24px] font-bold text-white mb-7">
+                {skillCategory.category}
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-7">
+                {skillCategory.items.map((skill, index) => (
+                  <motion.div
+                    key={index}
+                    variants={fadeIn("up", "spring", index * 0.1, 0.5)}
+                  >
+                    <SkillCard skill={skill} />
+                  </motion.div>
+                ))}
               </div>
-            );
-          } else if (skillCategory.category === "Mobile") {
-            return null;
-          } else {
-            return (
-              <div key={index} className="mb-14">
-                <h3 className="text-[24px] font-bold text-white mb-7">
-                  {skillCategory.category}
-                </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-7">
-                  {skillCategory.items.map((skill, index) => (
-                    <motion.div
-                      key={index}
-                      variants={fadeIn("up", "spring", index * 0.1, 0.5)}
-                    >
-                      <SkillCard skill={skill} />
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            );
-          }
+            </div>
+          );
         })}
       </div>
     </>

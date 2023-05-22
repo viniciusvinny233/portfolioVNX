@@ -144,7 +144,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Fevereiro 2021 - Junho 2022",
     points: [
-      "Aos 16 anos, entrei na TIVIT como menor aprendiz e vivenciei uma jornada de aceleração de carreira como desenvolvedor, na qual me ensinaram todos os princípios básicos de programação.",
+      "Entrei na TIVIT como menor aprendiz e vivenciei uma jornada de aceleração de carreira como desenvolvedor, na qual me ensinaram todos os princípios básicos de programação.",
       "Após aprender o necessário, fui incluído em uma equipe completa de desenvolvimento e atuei como desenvolvedor Full Stack.",
       "Competências: JavaScript · React.js · TypeScript · Node.js · JQuery · HTML5 · HTML · CSS · GitHub · SASS · Bootstrap",
     ],
@@ -180,7 +180,7 @@ const testimonials = [
     designation: "Analista de Testes Sênior | TIVIT",
     company: "TIVIT",
     image:
-      "https://media.licdn.com/dms/image/D4D03AQHvBkM45ciNVg/profile-displayphoto-shrink_100_100/0/1674013643676?e=1687392000&v=beta&t=dD1DE6aHYtn7754XRcRHOKCZdzUhnK20aij_70WL_Vk",
+      "https://media.licdn.com/dms/image/D4D03AQEix5n0ZNuDpQ/profile-displayphoto-shrink_100_100/0/1684375698733?e=1690416000&v=beta&t=NA4II7yNqDxrVypfA2ismTRs5pKS-rTf1nEEkCc4hn4",
   },
   {
     testimonial:
@@ -209,9 +209,49 @@ const testimonials = [
     image:
       "https://media.licdn.com/dms/image/D4D03AQFmWKzco9srkA/profile-displayphoto-shrink_100_100/0/1675256591829?e=1687392000&v=beta&t=wU9z3gQAPKgqVMOybZlo8B4M5HKX9xmrOjYVBh3qPwA",
   },
+  {
+    testimonial:
+      "É um prazer recomendar o Marcos pelo seu profissionalismo exemplar, capacidade extraordinária e dedicação excepcional em tudo que faz. Seu conhecimento profissional e habilidades técnicas são impressionantes. Dispensa comentários sobre sua capacidade em design UX/UI e o talento em linguagens e frameworks modernos como o JavaScript e React.",
+    name: "Pablo Galvão Cabugueira",
+    designation: "Desenvolvedor Front-end",
+    company: "FIAP",
+    image:
+      "https://media.licdn.com/dms/image/D4D03AQFgq_ZyDD1ytQ/profile-displayphoto-shrink_100_100/0/1684462289439?e=1690416000&v=beta&t=_QsTpKBFk4wLtxWVNX5WCYU2Ad-SCo3e6yQ2Ls86p0M",
+  },
+  {
+    testimonial:
+      "Tive a experiência gratificante de trabalhar com o Marcos em um projeto de desenvolvimento mobile utilizando Flutter, onde ele demonstrou excelentes habilidades tanto em UX design quanto na criação da estrutura frontend. Suas contribuições foram essenciais para o sucesso do projeto.",
+    name: "Lucas da Costa",
+    designation: "Analista de Sistemas",
+    company: "Amper",
+    image:
+      "https://media.licdn.com/dms/image/D4D35AQHuxv1aieHDrA/profile-framedphoto-shrink_100_100/0/1682525313130?e=1685401200&v=beta&t=j64giv6tcl-z3Oawpvu6Vv27HAie7RFpEZ6g9lG39E0",
+  },
 ];
 
 const projects = [
+  
+  {
+    name: "Bitcent",
+    description:
+      "O Bitcent é um excelente site permite que os usuários controlem suas finanças, monitorem suas despesas. A interface é intuitiva e responsiva, proporcionando uma experiência de usuário excepcional e bem desenvolvida.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: apeperia,
+    source_code_link: "https://github.com/viniciusvinny233/vnx-bitcent",
+  },
   {
     name: "PodCast",
     description:
@@ -234,46 +274,25 @@ const projects = [
     source_code_link: "https://podcast-viniciusvinny233.vercel.app/",
   },
   {
-    name: "Flappy Bird",
+    name: "Hoobank",
     description:
-      "Desenvolvi um clone web completo do  Flappy Bird, recriando o famoso jogo casual de habilidade, no qual o jogador controla um pássaro que deve atravessar obstáculos, proporcionando diversão e desafio.",
+      "O projeto HooBank é uma aplicação projetada para oferecer uma experiência intuitiva e moderna. Reimagina como as interações bancárias digitais podem ser simplificadas, mantendo a segurança e a funcionalidade no centro do design.",
     tags: [
       {
-        name: "html",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "nextjs",
         color: "pink-text-gradient",
       },
     ],
     image: flappy,
-    source_code_link: "https://viniciusvinny233.github.io/flappy-bird/",
-  },
-  {
-    name: "Apeperia",
-    description:
-      "Desenvolvi um site focado no aprendizado das normas de acessibilidade e SEO, visando aprimorar a experiência do usuário e otimizar a visibilidade nos mecanismos de busca, combinando boas práticas e técnicas modernas.",
-    tags: [
-      {
-        name: "sass",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "figma",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: apeperia,
-    source_code_link: "https://viniciusvinny233.github.io/acessibilidade/",
+    source_code_link: "https://github.com/viniciusvinny233/hoobank",
   },
 ];
 
