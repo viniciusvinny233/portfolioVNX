@@ -18,7 +18,7 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-10 rounded-3xl xs:w-[400px] w-full mb-10"
+    className="bg-black-200 p-14 rounded-3xl xs:w-[400px] w-full mb-10"
   >
     <p className="text-white font-black text-[48px]">"</p>
 
@@ -49,7 +49,7 @@ const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="slick-next text-white text-1xl p-2 rounded-full bg-gray-600 bg-opacity-70 hover:bg-opacity-100 transition-all duration-200"
+      className="hidden sm:flex slick-next text-white text-1xl p-2 rounded-full bg-gray-600 bg-opacity-70 hover:bg-opacity-100 transition-all duration-200"
       onClick={onClick}
     >
       &#8594;
@@ -61,7 +61,7 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="slick-prev text-white text-1xl p-2 rounded-full bg-gray-600 bg-opacity-70 hover:bg-opacity-100 transition-all duration-200"
+      className="hidden sm:flex slick-prev text-white text-1xl p-2 rounded-full bg-gray-600 bg-opacity-70 hover:bg-opacity-100 transition-all duration-200"
       onClick={onClick}
     >
       &#8592;
@@ -109,9 +109,9 @@ const Feedbacks = () => {
         </motion.div>
         </div>
       </div>
+      <div className={`${styles.paddingSlider} -mt-20 pb-7 `}>
       <div className={`${styles.paddingSlider} -mt-20 pb-7`}>
-      <div className={`${styles.paddingSlider} -mt-20 pb-7`}>
-        <Slider {...settings} className={`slider-container ${styles.paddingSlider} mx-auto`}>
+        <Slider {...settings} className={`slider-container ${styles.paddingSlider} mx-[0px]`}>
           {testimonials.map((testimonial, index) => (
             <div key={testimonial.name} className="">
               <FeedbackCard index={index} {...testimonial} />

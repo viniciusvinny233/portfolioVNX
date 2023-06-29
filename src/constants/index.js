@@ -1,8 +1,17 @@
 import {
+  lucas,
+  pablo,
+  maite,
+  rodrigo,
+  marcos, 
+  renan,
+  niu,
   apeperia,
+  bitcent,
   mobile,
   backend,
   creator,
+  fruta,
   web,
   javascript,
   typescript,
@@ -21,6 +30,7 @@ import {
   docker,
   hotmart,
   meta,
+  maeztra,
   starbucks,
   tivit,
   tesla,
@@ -56,7 +66,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Desenvolvedor Backend",
+    title: "Desenvolvedor WordPress",
     icon: backend,
   },
   {
@@ -111,7 +121,7 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
@@ -138,13 +148,13 @@ const experiences = [
     ],
   },
   {
-    title: "Desenvolvedor Full Stack Júnior",
+    title: "Desenvolvedor Full Stack",
     company_name: "TIVIT",
     icon: tivit,
     iconBg: "#E6DEDD",
     date: "Fevereiro 2021 - Junho 2022",
     points: [
-      "Entrei na TIVIT como menor aprendiz e vivenciei uma jornada de aceleração de carreira como desenvolvedor, na qual me ensinaram todos os princípios básicos de programação.",
+      "Entrei na TIVIT e vivenciei uma jornada de aceleração de carreira como desenvolvedor, na qual me ensinaram todos os princípios básicos de programação.",
       "Após aprender o necessário, fui incluído em uma equipe completa de desenvolvimento e atuei como desenvolvedor Full Stack.",
       "Competências: JavaScript · React.js · TypeScript · Node.js · JQuery · HTML5 · HTML · CSS · GitHub · SASS · Bootstrap",
     ],
@@ -170,8 +180,7 @@ const testimonials = [
     name: "Renan Moraes",
     designation: "Full Stack Developer Sênior | Flutter | Mobile",
     company: "TIVIT",
-    image:
-      "https://media.licdn.com/dms/image/C5603AQF1Lcxt-xSWhw/profile-displayphoto-shrink_100_100/0/1517229658924?e=1687392000&v=beta&t=6w9APDk3A0tG9GoiJJTBw0NNDlqB3pisdMO3XbI2aSs",
+    image: renan
   },
   {
     testimonial:
@@ -179,8 +188,7 @@ const testimonials = [
     name: "Niuslene Sales",
     designation: "Analista de Testes Sênior | TIVIT",
     company: "TIVIT",
-    image:
-      "https://media.licdn.com/dms/image/D4D03AQEix5n0ZNuDpQ/profile-displayphoto-shrink_100_100/0/1684375698733?e=1690416000&v=beta&t=NA4II7yNqDxrVypfA2ismTRs5pKS-rTf1nEEkCc4hn4",
+    image: niu
   },
   {
     testimonial:
@@ -188,8 +196,7 @@ const testimonials = [
     name: "Marcos Lopes",
     designation: "Analista de Sistemas Pleno na TIVIT",
     company: "TIVIT",
-    image:
-      "https://media.licdn.com/dms/image/C4D03AQFBThywauO01Q/profile-displayphoto-shrink_100_100/0/1659384091376?e=1687392000&v=beta&t=eVkNJ5HJr698u3WhuN1M1P-gUJXiIXAerFEtxc7VIKo",
+    image: marcos
   },
   {
     testimonial:
@@ -197,8 +204,7 @@ const testimonials = [
     name: "Rodrigo Barbeiro",
     designation: "Analista de Business Intelligence",
     company: "TIVIT",
-    image:
-      "https://media.licdn.com/dms/image/C4D03AQFeDhM4NKOCyg/profile-displayphoto-shrink_100_100/0/1582057703302?e=1687392000&v=beta&t=GyxYFR1p3_nDNpU-UgBN2O4GcX_EX4M0GLbMihKypAE",
+    image: rodrigo
   },
   {
     testimonial:
@@ -206,8 +212,7 @@ const testimonials = [
     name: "Maitê Savicius",
     designation: "Engenheira de Software",
     company: "Class Solutions",
-    image:
-      "https://media.licdn.com/dms/image/D4D03AQFmWKzco9srkA/profile-displayphoto-shrink_100_100/0/1675256591829?e=1687392000&v=beta&t=wU9z3gQAPKgqVMOybZlo8B4M5HKX9xmrOjYVBh3qPwA",
+    image: maite
   },
   {
     testimonial:
@@ -215,8 +220,7 @@ const testimonials = [
     name: "Pablo Galvão Cabugueira",
     designation: "Desenvolvedor Front-end",
     company: "FIAP",
-    image:
-      "https://media.licdn.com/dms/image/D4D03AQFgq_ZyDD1ytQ/profile-displayphoto-shrink_100_100/0/1684462289439?e=1690416000&v=beta&t=_QsTpKBFk4wLtxWVNX5WCYU2Ad-SCo3e6yQ2Ls86p0M",
+    image: pablo
   },
   {
     testimonial:
@@ -224,13 +228,11 @@ const testimonials = [
     name: "Lucas da Costa",
     designation: "Analista de Sistemas",
     company: "Amper",
-    image:
-      "https://media.licdn.com/dms/image/D4D35AQHuxv1aieHDrA/profile-framedphoto-shrink_100_100/0/1682525313130?e=1685401200&v=beta&t=j64giv6tcl-z3Oawpvu6Vv27HAie7RFpEZ6g9lG39E0",
+    image: lucas
   },
 ];
 
 const projects = [
-  
   {
     name: "Bitcent",
     description:
@@ -249,8 +251,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: apeperia,
-    source_code_link: "https://github.com/viniciusvinny233/vnx-bitcent",
+    image: bitcent,
+    source_code_link: "https://github.com/viniciusvinny233",
   },
   {
     name: "PodCast",
@@ -271,7 +273,7 @@ const projects = [
       },
     ],
     image: podcast,
-    source_code_link: "https://podcast-viniciusvinny233.vercel.app/",
+    source_code_link: "https://github.com/viniciusvinny233",
   },
   {
     name: "Hoobank",
@@ -292,7 +294,70 @@ const projects = [
       },
     ],
     image: flappy,
-    source_code_link: "https://github.com/viniciusvinny233/hoobank",
+    source_code_link: "https://github.com/viniciusvinny233",
+  },
+  {
+    name: "Maeztra",
+    description:
+      "O Maeztra é uma plataforma de comércio eletrônico robusta e eficaz que fornece aos usuários uma experiência de compra sem igual. A navegação suave, a interface amigável e os recursos avançados de filtragem permitem que os clientes encontrem exatamente o que procuram em questão de segundos.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: maeztra,
+    source_code_link: "https://github.com/viniciusvinny233",
+  },
+  {
+    name: "Fruta & Fruto",
+    description:
+      "Fruta & Fruto é um rico site de receitas centrado em frutas, oferecendo aos usuários uma experiência culinária única e prazerosa. Com uma interface intuitiva, permite aos amantes de comida pesquisar e filtrar receitas por fruta, tempo de preparo e mais. Transforma a jornada culinária em uma atividade fácil e gratificante.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fruta,
+    source_code_link: "https://github.com/viniciusvinny233",
+  },
+  {
+    name: "Apeperia",
+    description:
+      "A Apeperia é uma startup inovadora que oferece soluções eficientes e acessíveis de sites e aplicativos para pequenas e médias empresas. Com uma abordagem centrada no usuário, a Apeperia permite que as empresas se digitalizem com facilidade, ajudando-as a competir e crescer no mercado digital.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: apeperia,
+    source_code_link: "https://github.com/viniciusvinny233",
   },
 ];
 

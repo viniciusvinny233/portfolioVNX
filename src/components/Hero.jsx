@@ -21,20 +21,12 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Marcos Vinicius</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Sou desenvolvedor de softwares desde os meus 15 anos e <br className="sm:block hidden" />
-            fascinado por tecnologia desde a infância.
+            Sou desenvolvedor de softwares e fascinado<br className="sm:block hidden" />
+            por tecnologia desde a infância.
           </p>
         </div>
 
         <Tilt className="md:block hidden absolute inset-0 top-[100px] left-[820px] max-w-xl ${styles.paddingXName} flex flex-row items-start gap-5">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 500 }}
-          >
-            <div className="">
-              <img src={marcosVinicius} alt="" className="image-shadow-gradient" width="450" />
-            </div>
-          </motion.div>
         </Tilt>
 
       </div>

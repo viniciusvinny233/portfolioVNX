@@ -18,12 +18,13 @@ import jqueryIcon from "/src/assets/tech/jquery.png";
 import sassIcon from "/src/assets/tech/sass.png";
 import nodejsIcon from "/src/assets/tech/nodejs.png";
 import figmaIcon from "/src/assets/tech/figma.png";
-import gitIcon from "/src/assets/tech/git.png";
+import wordPressIcon from "/src/assets/tech/wordpress.png";
 import azureIcon from "/src/assets/tech/azure.svg";
 import jiraIcon from "/src/assets/tech/jira.svg";
 import photoshopIcon from "/src/assets/tech/photoshop.svg";
 import dartIcon from "/src/assets/tech/dart.svg";
 import flutterIcon from "/src/assets/tech/flutter.svg";
+import elementorIcon from "/src/assets/tech/elementor.svg";
 import sqlIcon from "/src/assets/tech/sql.svg";
 import nextIcon from "/src/assets/tech/nextjs.png";
 import firebaseIcon from "/src/assets/tech/firebase.png";
@@ -122,16 +123,16 @@ const skills = [
         level: 30,
       },
       {
-        name: "Git",
-        icon: gitIcon,
+        name: "WordPress",
+        icon: wordPressIcon,
         nivel: "Senior",
         level: 90,
       },
       {
-        name: "Azure",
-        icon: azureIcon,
-        nivel: "Junior",
-        level: 35,
+        name: "Elementor",
+        icon: elementorIcon,
+        nivel: "Senior",
+        level: 90,
       },
       {
         name: "Photoshop",
@@ -177,13 +178,13 @@ const ProgressBar = ({ level }) => {
 };
 
 const SkillCard = ({ skill }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt className="w-[150px] md:w-[250px] sm:w-[250px]">
     <motion.div
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 500 }}
     >
-      <div className="bg-tertiary rounded-[20px] p-6 sm:w-[250px] w-full flex flex-col items-center">
+      <div className="bg-tertiary rounded-[20px] p-6 md:w-[250px] sm:w-[250px] w-full flex flex-col items-center">
         <h3 className="text-[20px] font-bold">{skill.name}</h3>
         <img src={skill.icon} alt={skill.name} className="w-12 h-12 mb-4" />
         <div className="mt-2">
@@ -209,7 +210,7 @@ const Tech = () => {
               <h3 className="text-[24px] font-bold text-white mb-7">
                 {skillCategory.category}
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-7">
+              <div className="grid grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 gap-7">
                 {skillCategory.items.map((skill, index) => (
                   <motion.div
                     key={index}

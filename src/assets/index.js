@@ -31,14 +31,35 @@ import lambda from "./company/lambda.png";
 
 import flappy from "./flappy.jpg";
 import podcast from "./podcast.jpg";
-import apeperia from "./apeperia.jpg";
+import bitcent from "./bitcent.jpg";
+import apeperia from "./apeperia.png";
+import fruta from "./fruta.png";
+import maeztra from "./maeztra.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import lucas from "./lucas.jpg";
+import pablo from "./pablo.jpg";
+import maite from "./maite.jpg";
+import rodrigo from "./lucas.jpg";
+import marcos from "./marcos.jpg";
+import renan from "./renan.jpg";
+import niu from "./niu.jpg";
+
 export {
+  lucas,
+  pablo,
+  maite,
+  rodrigo,
+  marcos, 
+  renan,
+  niu,
   apeperia,
+  fruta,
+  maeztra,
+  bitcent,
   logo,
   backend,
   creator,
