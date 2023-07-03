@@ -54,10 +54,6 @@ export const navLinks = [
     id: "tech",
     title: "Habilidades",
   },
-  {
-    id: "contact",
-    title: "Contato",
-  },
 ];
 
 const services = [
@@ -184,7 +180,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "Vinícius é muito dedicado, responsável e tem uma grande vontade de aprender! Ele é muito proativo e sempre está disposto a ajudar os outros, além de ter um excelente trabalho em equipe. Além disso, ele é muito criativo e tem uma grande capacidade de resolver problemas. Ele é uma ótima adição para qualquer equipe.",
+      "Vinícius é muito dedicado, responsável e tem uma grande vontade de aprender! Ele é muito proativo e sempre está disposto a ajudar os outros, além de ter um excelente trabalho em equipe. Além disso, ele é muito criativo e tem uma grande capacidade de resolver problemas.",
     name: "Niuslene Sales",
     designation: "Analista de Testes Sênior | TIVIT",
     company: "TIVIT",
@@ -216,7 +212,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "É um prazer recomendar o Marcos pelo seu profissionalismo exemplar, capacidade extraordinária e dedicação excepcional em tudo que faz. Seu conhecimento profissional e habilidades técnicas são impressionantes. Dispensa comentários sobre sua capacidade em design UX/UI e o talento em linguagens e frameworks modernos como o JavaScript e React.",
+      "É um prazer recomendar o Marcos pelo seu profissionalismo exemplar, capacidade extraordinária e dedicação excepcional em tudo que faz. Seu conhecimento profissional e habilidades técnicas são impressionantes.",
     name: "Pablo Galvão Cabugueira",
     designation: "Desenvolvedor Front-end",
     company: "FIAP",

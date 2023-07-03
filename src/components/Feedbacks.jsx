@@ -100,7 +100,7 @@ const Feedbacks = () => {
   };
 
   return (
-    <div className="mt-12 bg-black-100 rounded-[20px] ">
+    <div className="mt-12 bg-black-100 rounded-[20px]">
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
         <div className={`${styles.paddingSlider}`}>
         <motion.div variants={textVariant()}>
@@ -110,7 +110,7 @@ const Feedbacks = () => {
         </div>
       </div>
       <div className={`${styles.paddingSlider} -mt-20 pb-7 `}>
-      <div className={`${styles.paddingSlider} -mt-20 pb-7`}>
+      <div className={`-mt-20 pb-7`}>
         <Slider {...settings} className={`slider-container ${styles.paddingSlider} mx-[0px]`}>
           {testimonials.map((testimonial, index) => (
             <div key={testimonial.name} className="">
@@ -125,3 +125,4 @@ const Feedbacks = () => {
 };
 
 export default Feedbacks;
+
