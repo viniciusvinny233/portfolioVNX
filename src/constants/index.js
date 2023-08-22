@@ -3,7 +3,7 @@ import {
   pablo,
   maite,
   rodrigo,
-  marcos, 
+  marcos,
   renan,
   niu,
   apeperia,
@@ -39,6 +39,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  porto,
 } from "../assets";
 
 export const navLinks = [
@@ -131,16 +132,31 @@ const technologies = [
 ];
 
 const experiences = [
+
   {
-    title: "Social Media Designer",
-    company_name: "Hotmart",
-    icon: hotmart,
-    iconBg: "#383E56",
-    date: "Março 2020 - Janeiro 2021",
+    title: "Desenvolvedor Front-end Pleno",
+    company_name: "Porto Seguro",
+    icon: porto,
+    iconBg: "#E6DEDD",
+    date: "Agosto 2023 - Atual",
     points: [
-      "Por algum tempo, atuei como designer de produtos digitais, desenvolvendo flyers, banners, logotipos, entre outros.",
-      "Está experiência me proporcionou conhecimentos valiosos em design de interface e experiência do usuário (UI/UX), que foram extremamente importantes para o início da minha carreira como desenvolvedor.",
-      "Competências: Adobe Photoshop · Figma",
+      "Criação estratégica de Landing Pages e emails marketing para ampliar o alcance digital.",
+      "Versatilidade no design e desenvolvimento de projetos-chave.",
+      "Atuação presencial colaborativa em uma das maiores empresas do Brasil.",
+      "Competências: React.js · JavaScript · HTML5 · HTML · CSS · Web design · Desenvolvimento de front-end · Bootstrap · Adobe Photoshop",
+    ],
+  },
+  {
+    title: "Desenvolvedor de software",
+    company_name: "Lambda3",
+    icon: lambda,
+    iconBg: "#383E56",
+    date: "Junho 2022 - Julho 2023",
+    points: [
+      "Desempenho chave no período de transição após a aquisição da Lambda3 pela TIVIT.",
+      "Expertise como Desenvolvedor Full Stack em um projeto mobile abrangente.",
+      "Proficiência em Dart (Flutter), liderando o design e desenvolvimento de diversas telas.",
+      "Competências: Flutter · JavaScript · MySQL · C# · HTML5 · HTML · CSS · GitHub · Dart · Scrum · JIRA · Windows Azure · Adobe Photoshop",
     ],
   },
   {
@@ -150,21 +166,23 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Fevereiro 2021 - Junho 2022",
     points: [
-      "Entrei na TIVIT e vivenciei uma jornada de aceleração de carreira como desenvolvedor, na qual me ensinaram todos os princípios básicos de programação.",
-      "Após aprender o necessário, fui incluído em uma equipe completa de desenvolvimento e atuei como desenvolvedor Full Stack.",
+      "Evolução rápida de Junior aprendiz a Desenvolvedor Full Stack.",
+      "Imersão completa nos princípios fundamentais da programação.",
+      "Contribuição ativa em uma equipe completa de desenvolvimento.",
       "Competências: JavaScript · React.js · TypeScript · Node.js · JQuery · HTML5 · HTML · CSS · GitHub · SASS · Bootstrap",
     ],
   },
   {
-    title: "Desenvolvedor de software",
-    company_name: "Lambda3",
-    icon: lambda,
+    title: "Social Media Designer",
+    company_name: "Hotmart",
+    icon: hotmart,
     iconBg: "#383E56",
-    date: "Junho 2022 - Abril 2023",
+    date: "Março 2020 - Janeiro 2021",
     points: [
-      "Após a TIVIT adquirir a Lambda3, todas as equipes de desenvolvimento foram transferidas para a Lambda3. Atuei como desenvolvedor Full Stack em um projeto mobile, trabalhando tanto no Front-end quanto no Back-end, além de desenvolver o design de diversas telas do projeto.",
-      "A principal linguagem utilizada no projeto foi Dart (Flutter).",
-      "Competências: Flutter · JavaScript · MySQL · C# · HTML5 · HTML · CSS · GitHub · Dart · Scrum · JIRA · Windows Azure · Adobe Photoshop",
+      "Desenvolvimento de materiais visuais diversos, incluindo flyers, banners e logotipos.",
+      "Aquisição de competências valiosas em UI / UX.",
+      "Base sólida em design que contribuiu significativamente para minha transição para o desenvolvimento.",
+      "Competências: Adobe Photoshop · Figma",
     ],
   },
 ];
