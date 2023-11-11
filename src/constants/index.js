@@ -40,6 +40,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  porto,
 } from "../assets";
 
 export const navLinks = [
@@ -132,6 +133,7 @@ const technologies = [
 ];
 
 const experiences = [
+
   {
     title: "Desenvolvedor Front-end Pleno",
     company_name: "Porto",
@@ -146,11 +148,11 @@ const experiences = [
     ],
   },
   {
-    title: "Desenvolvedor de software",
-    company_name: "Lambda3",
-    icon: lambda,
+    title: "Social Media Designer",
+    company_name: "Hotmart",
+    icon: hotmart,
     iconBg: "#383E56",
-    date: "Junho 2022 - Abril 2023",
+    date: "Março 2020 - Janeiro 2021",
     points: [
       "Desempenho chave no período de transição após a aquisição da Lambda3 pela TIVIT.",
       "Expertise como Desenvolvedor Full Stack em um projeto mobile abrangente.",

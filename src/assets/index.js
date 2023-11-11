@@ -28,7 +28,11 @@ import tesla from "./company/tesla.png";
 import hotmart from "./company/hotmart.png";
 import tivit from "./company/tivit.png";
 import lambda from "./company/lambda.png";
+<<<<<<< HEAD
 import porto from "./company/porto.jpg";
+=======
+import porto from "./company/porto.png";
+>>>>>>> 00ecb17edabbf074b4e6c63e60f706ab419ef5b3
 
 import flappy from "./flappy.jpg";
 import podcast from "./podcast.jpg";
@@ -95,4 +99,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  porto,
 };

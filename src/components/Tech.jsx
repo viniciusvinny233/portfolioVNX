@@ -146,9 +146,9 @@ const skills = [
     category: "Mobile",
     items: [
       {
-        name: "Dart",
-        icon: dartIcon,
-        nivel: "Senior",
+        name: "React Native",
+        icon: reactIcon,
+        nivel: "Junior",
         level: 90,
       },
       {
