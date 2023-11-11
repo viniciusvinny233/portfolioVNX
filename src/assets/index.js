@@ -28,6 +28,7 @@ import tesla from "./company/tesla.png";
 import hotmart from "./company/hotmart.png";
 import tivit from "./company/tivit.png";
 import lambda from "./company/lambda.png";
+import porto from "./company/porto.jpg";
 
 import flappy from "./flappy.jpg";
 import podcast from "./podcast.jpg";
@@ -53,6 +54,7 @@ export {
   pablo,
   maite,
   rodrigo,
+  porto,
   marcos, 
   renan,
   niu,

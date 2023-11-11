@@ -163,12 +163,11 @@ const Contact = () => {
         </form>
       </motion.div> */}
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+      <div
         className="xl:flex-1 xl:h-[700px] md:h-[800px] h-[600px] w-full justify-center"
       >
         <EarthCanvas />
-      </motion.div>
+      </div>
     </div >
   );
 };
