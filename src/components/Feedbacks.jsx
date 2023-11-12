@@ -71,7 +71,6 @@ const PrevArrow = (props) => {
 
 const Feedbacks = () => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 800,
     slidesToShow: 3,

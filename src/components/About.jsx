@@ -47,13 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Sou um Desenvolvedor Full Stack apaixonado por tecnologia e por criar 
-        soluções para problemas complexos. Tenho habilidades tanto em 
-        desenvolvimento Front-end quanto em Back-end. Minha especialização em 
-        Design me permite ajudar e entender a criação de interfaces intuitivas 
-        e agradáveis ao usuário. Estou sempre em busca de novos desafios e 
-        oportunidades de aprendizado, e sou movido pela paixão de criar soluções 
-        que transformam ideias em realidade.
+        Especialista em desenvolvimento Front-end, possuo um portfólio abrangente que inclui interfaces web altamente responsivas e aplicações móveis de alto desempenho. Tenho uma competência avançada em uma gama de tecnologias contemporâneas como React.js, Next.js, Flutter e React Native, as quais utilizo para entregar soluções técnicas de alto nível e arquitetura de software sofisticada.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

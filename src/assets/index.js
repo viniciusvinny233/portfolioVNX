@@ -36,6 +36,8 @@ import bitcent from "./bitcent.jpg";
 import apeperia from "./apeperia.png";
 import fruta from "./fruta.png";
 import maeztra from "./maeztra.png";
+import ecconect from "./econnect.png";
+import metaverse from "./metaverse.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -64,6 +66,7 @@ export {
   logo,
   backend,
   creator,
+  metaverse,
   mobile,
   web,
   github,
@@ -71,6 +74,7 @@ export {
   close,
   css,
   docker,
+  ecconect,
   figma,
   git,
   html,

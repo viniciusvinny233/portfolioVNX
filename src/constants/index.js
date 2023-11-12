@@ -29,10 +29,12 @@ import {
   podcast,
   docker,
   hotmart,
+  ecconect,
   meta,
   maeztra,
   starbucks,
   tivit,
+  metaverse,
   tesla,
   shopify,
   carrent,
@@ -63,11 +65,11 @@ const services = [
     icon: web,
   },
   {
-    title: "Desenvolvedor WordPress",
+    title: "Especialista React",
     icon: backend,
   },
   {
-    title: "Desenvolvedor Flutter",
+    title: "Desenvolvedor Mobile",
     icon: mobile,
   },
   {
@@ -140,10 +142,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Agosto 2023 - Atual",
     points: [
-      "Criação estratégica de Landing Pages e emails marketing para ampliar o alcance digital.",
-      "Versatilidade no design e desenvolvimento de projetos-chave.",
-      "Atuação presencial colaborativa em uma das maiores empresas do Brasil.",
-      "Competências: React.js · JavaScript · HTML5 · HTML · CSS · Web design · Desenvolvimento de front-end · Bootstrap · Adobe Photoshop",
+      "Criação e otimização de landing pages para maximizar a conversão de usuários.",
+      "Implementação de práticas de SEO e design responsivo em landing pages.",
+      "Desenvolvimento de interfaces ricas e interativas para campanhas de marketing digital​​.",
+      "Competências: HTML · Javascript · CSS · SASS  Typescript · jQuery · React.js · Bootstrap · Next.js · Photoshop",
     ],
   },
   {
@@ -153,10 +155,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "Junho 2022 - Julho 2023",
     points: [
-      "Desempenho chave no período de transição após a aquisição da Lambda3 pela TIVIT.",
-      "Expertise como Desenvolvedor Full Stack em um projeto mobile abrangente.",
-      "Proficiência em Dart (Flutter), liderando o design e desenvolvimento de diversas telas.",
-      "Competências: Flutter · JavaScript · MySQL · C# · HTML5 · HTML · CSS · GitHub · Dart · Scrum · JIRA · Windows Azure · Adobe Photoshop",
+      "Especialização no desenvolvimento de aplicações web e móveis.",
+      "Criação de interfaces de usuário otimizadas para usabilidade e acessibilidade.",
+      "Atuação em desenvolvimento cross-platform, otimizando a experiência do usuário em diversas plataformas​​.",
+      "Competências: HTML · Javascript · CSS · Figma  Typescript · React.js · Node.js · Next.js · Flutter · React Native",
     ],
   },
   {
@@ -166,23 +168,23 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Fevereiro 2021 - Junho 2022",
     points: [
-      "Evolução rápida de Junior aprendiz a Desenvolvedor Full Stack.",
-      "Imersão completa nos princípios fundamentais da programação.",
-      "Contribuição ativa em uma equipe completa de desenvolvimento.",
-      "Competências: JavaScript · React.js · TypeScript · Node.js · JQuery · HTML5 · HTML · CSS · GitHub · SASS · Bootstrap",
+      "Versatilidade em projetos diversificados, adaptando-se a novas tecnologias.",
+      "Contribuição efetiva em múltiplas equipes de desenvolvimento.",
+      "Engajamento em todas as fases de desenvolvimento de software​​.",
+      "Competências: HTML · Javascript · CSS · Typescript · SASS · jQuery React.js · Bootstrap · Node.js · Next.js · Flutter · React Native",
     ],
   },
   {
-    title: "Social Media Designer",
+    title: "UI/UX Designer",
     company_name: "Hotmart",
     icon: hotmart,
     iconBg: "#383E56",
     date: "Março 2020 - Janeiro 2021",
     points: [
-      "Desenvolvimento de materiais visuais diversos, incluindo flyers, banners e logotipos.",
-      "Aquisição de competências valiosas em UI / UX.",
-      "Base sólida em design que contribuiu significativamente para minha transição para o desenvolvimento.",
-      "Competências: Adobe Photoshop · Figma",
+      "Desenvolvimento de habilidades em UI/UX para produtos digitais.",
+      "Criação de conteúdo visual, incluindo landing pages, banners e logotipos.",
+      "Formação em design digital, facilitando transição para desenvolvimento​​.",
+      "Competências: HTML · Javascript · CSS · Figma · Photoshop ",
     ],
   },
 ];
@@ -266,7 +268,7 @@ const projects = [
       },
     ],
     image: bitcent,
-    source_code_link: "https://github.com/viniciusvinny233",
+    source_code_link: "https://github.com/viniciusvinny233/vnx-bitcent",
   },
   {
     name: "PodCast",
@@ -287,7 +289,7 @@ const projects = [
       },
     ],
     image: podcast,
-    source_code_link: "https://github.com/viniciusvinny233",
+    source_code_link: "https://github.com/viniciusvinny233/podcast",
   },
   {
     name: "Hoobank",
@@ -308,7 +310,7 @@ const projects = [
       },
     ],
     image: flappy,
-    source_code_link: "https://github.com/viniciusvinny233",
+    source_code_link: "https://github.com/viniciusvinny233/hoobank",
   },
   {
     name: "Maeztra",
@@ -329,15 +331,15 @@ const projects = [
       },
     ],
     image: maeztra,
-    source_code_link: "https://github.com/viniciusvinny233",
+    source_code_link: "https://github.com/viniciusvinny233/maeztra",
   },
   {
-    name: "Fruta & Fruto",
+    name: "Econnect",
     description:
-      "Fruta & Fruto é um rico site de receitas centrado em frutas, oferecendo aos usuários uma experiência culinária única e prazerosa. Com uma interface intuitiva, permite aos amantes de comida pesquisar e filtrar receitas por fruta, tempo de preparo e mais. Transforma a jornada culinária em uma atividade fácil e gratificante.",
+      "A Econnect é uma plataforma desenvolvida com o intuito de informar e incentivar os colaboradores da Schneider a serem mais engajados com a sustentabilidade, alinhando-se à ideia de propósito da empresa. Entendemos a sustentabilidade como um tema que engloba uma vasta gama de perspectivas e oportunidades.",
     tags: [
       {
-        name: "html",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
@@ -345,20 +347,20 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "nextjs",
         color: "pink-text-gradient",
       },
     ],
-    image: fruta,
-    source_code_link: "https://github.com/viniciusvinny233",
+    image: ecconect,
+    source_code_link: "https://github.com/viniciusvinny233/project-fiap-challenge",
   },
   {
-    name: "Apeperia",
+    name: "Metaverse",
     description:
-      "A Apeperia é uma startup inovadora que oferece soluções eficientes e acessíveis de sites e aplicativos para pequenas e médias empresas. Com uma abordagem centrada no usuário, a Apeperia permite que as empresas se digitalizem com facilidade, ajudando-as a competir e crescer no mercado digital.",
+      "Mergulhe no projeto Metaverso UI/UX, uma experiência web cativante projetada para transportar os usuários para diversos reinos dentro do metaverso. Este projeto apresenta uma seleção de mundos temáticos que os usuários podem explorar, cada um representado por um cartão visualmente rico com animações que ganham vida ao toque.",
     tags: [
       {
-        name: "html",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
@@ -366,12 +368,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "nextjs",
         color: "pink-text-gradient",
       },
     ],
-    image: apeperia,
-    source_code_link: "https://github.com/viniciusvinny233",
+    image: metaverse,
+    source_code_link: "https://github.com/viniciusvinny233/metaverso_uiux",
   },
 ];
 
