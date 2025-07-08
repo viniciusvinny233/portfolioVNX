@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Especialista em desenvolvimento Front-end, possuo um portfólio abrangente que inclui interfaces web altamente responsivas e aplicações móveis de alto desempenho. Tenho uma competência avançada em uma gama de tecnologias contemporâneas como React.js, Next.js, Flutter e React Native, as quais utilizo para entregar soluções técnicas de alto nível e arquitetura de software sofisticada.
+        Especialista em desenvolvimento Front-end, possuo um portfólio abrangente que inclui interfaces web altamente responsivas e aplicações móveis de alto desempenho. Tenho uma competência avançada em uma gama de tecnologias contemporâneas como Flutter e React.js, as quais utilizo para entregar soluções técnicas de alto nível e arquitetura de software sofisticada.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

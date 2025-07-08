@@ -42,6 +42,7 @@ import {
   tripguide,
   threejs,
   porto,
+  brasilcard,
 } from "../assets";
 
 export const navLinks = [
@@ -69,7 +70,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Desenvolvedor Mobile",
+    title: "Especialista Flutter",
     icon: mobile,
   },
   {
@@ -137,10 +138,23 @@ const experiences = [
 
   {
     title: "Desenvolvedor Front-end Pleno",
+    company_name: "Brasil Card",
+    icon: brasilcard,
+    iconBg: "#383E56",
+    date: "Fevereiro 2024 - Atual",
+    points: [
+      "Desenvolvimento de aplicativos móveis em Flutter para iOS e Android, focando em desempenho e experiência de usuário, com BLoC e GetX.",
+      "Automatização de construção e distribuição via CI/CD com CodeMagic e criação de um sistema de design consistente.",
+      "Publicação na App Store e Google Play, garantindo conformidade, gerenciando notificações push e monitorando com Firebase e Crashlytics.",
+      "Competências: Flutter · GetX · BLoC · Dart  Firebase · iOS · Android · Azure · Codemagic · Figma",
+    ],
+  },
+  {
+    title: "Desenvolvedor Front-end Pleno",
     company_name: "Porto Seguro",
     icon: porto,
     iconBg: "#E6DEDD",
-    date: "Agosto 2023 - Atual",
+    date: "Julho 2023 - Dezembro 2023",
     points: [
       "Criação e otimização de landing pages para maximizar a conversão de usuários.",
       "Implementação de práticas de SEO e design responsivo em landing pages.",
@@ -153,7 +167,7 @@ const experiences = [
     company_name: "Lambda3",
     icon: lambda,
     iconBg: "#383E56",
-    date: "Junho 2022 - Julho 2023",
+    date: "Junho 2022 - Junho 2023",
     points: [
       "Especialização no desenvolvimento de aplicações web e móveis.",
       "Criação de interfaces de usuário otimizadas para usabilidade e acessibilidade.",
@@ -166,7 +180,7 @@ const experiences = [
     company_name: "TIVIT",
     icon: tivit,
     iconBg: "#E6DEDD",
-    date: "Fevereiro 2021 - Junho 2022",
+    date: "Outubro 2020 - Junho 2022",
     points: [
       "Versatilidade em projetos diversificados, adaptando-se a novas tecnologias.",
       "Contribuição efetiva em múltiplas equipes de desenvolvimento.",
@@ -179,7 +193,7 @@ const experiences = [
     company_name: "Hotmart",
     icon: hotmart,
     iconBg: "#383E56",
-    date: "Março 2020 - Janeiro 2021",
+    date: "Março 2020 - Outubro 2020",
     points: [
       "Desenvolvimento de habilidades em UI/UX para produtos digitais.",
       "Criação de conteúdo visual, incluindo landing pages, banners e logotipos.",

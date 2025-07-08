@@ -29,6 +29,7 @@ import hotmart from "./company/hotmart.png";
 import tivit from "./company/tivit.png";
 import lambda from "./company/lambda.png";
 import porto from "./company/porto.png";
+import brasilcard from "./company/brasilcard.png";
 
 import flappy from "./flappy.jpg";
 import podcast from "./podcast.jpg";
@@ -99,4 +100,5 @@ export {
   jobit,
   tripguide,
   porto,
+  brasilcard,
 };
