@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import Tilt from "react-tilt";
+import Tilt from 'react-parallax-tilt';
 
 import marcosVinicius from "/src/assets/marcosVinicius.png";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-[620px] mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingXName} flex flex-row items-start gap-5`}
       >

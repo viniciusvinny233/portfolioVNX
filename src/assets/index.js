@@ -28,11 +28,8 @@ import tesla from "./company/tesla.png";
 import hotmart from "./company/hotmart.png";
 import tivit from "./company/tivit.png";
 import lambda from "./company/lambda.png";
-<<<<<<< HEAD
-import porto from "./company/porto.jpg";
-=======
 import porto from "./company/porto.png";
->>>>>>> 00ecb17edabbf074b4e6c63e60f706ab419ef5b3
+import brasilcard from "./company/brasilcard.png";
 
 import flappy from "./flappy.jpg";
 import podcast from "./podcast.jpg";
@@ -40,6 +37,8 @@ import bitcent from "./bitcent.jpg";
 import apeperia from "./apeperia.png";
 import fruta from "./fruta.png";
 import maeztra from "./maeztra.png";
+import ecconect from "./econnect.png";
+import metaverse from "./metaverse.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -58,7 +57,6 @@ export {
   pablo,
   maite,
   rodrigo,
-  porto,
   marcos, 
   renan,
   niu,
@@ -69,6 +67,7 @@ export {
   logo,
   backend,
   creator,
+  metaverse,
   mobile,
   web,
   github,
@@ -76,6 +75,7 @@ export {
   close,
   css,
   docker,
+  ecconect,
   figma,
   git,
   html,
@@ -100,4 +100,5 @@ export {
   jobit,
   tripguide,
   porto,
+  brasilcard,
 };

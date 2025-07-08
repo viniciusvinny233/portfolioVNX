@@ -1,4 +1,4 @@
-import Tilt from "react-tilt";
+import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -35,7 +35,7 @@ const ProjectCard = ({
               src={github}
               alt="github"
               className="w-1/2 h-1/2 object-contain"
-              source_code_link="https://github.com/viniciusvinny233"
+              source_code_link={source_code_link}
             />
           </div>
         </div>

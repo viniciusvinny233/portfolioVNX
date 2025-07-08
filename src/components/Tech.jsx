@@ -3,7 +3,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-import Tilt from "react-tilt";
+import Tilt from 'react-parallax-tilt';
 
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -125,19 +125,19 @@ const skills = [
       {
         name: "WordPress",
         icon: wordPressIcon,
-        nivel: "Senior",
+        nivel: "Pleno",
         level: 90,
       },
       {
         name: "Elementor",
         icon: elementorIcon,
-        nivel: "Senior",
+        nivel: "Pleno",
         level: 90,
       },
       {
         name: "Photoshop",
         icon: photoshopIcon,
-        nivel: "Senior",
+        nivel: "Pleno",
         level: 90,
       },
     ],
@@ -148,13 +148,13 @@ const skills = [
       {
         name: "React Native",
         icon: reactIcon,
-        nivel: "Junior",
+        nivel: "Pleno",
         level: 90,
       },
       {
         name: "Flutter",
         icon: flutterIcon,
-        nivel: "Senior",
+        nivel: "Pleno",
         level: 90,
       },
     ],
