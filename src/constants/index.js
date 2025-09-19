@@ -153,7 +153,7 @@ const technologies = [
     title: "Desenvolvedor Front-end Pleno",
     company_name: "Brasil Card",
     icon: brasilcard,
-    iconBg: "#104d7f",
+    iconBg: "#E6DEDD",
     date: "Fevereiro 2024 - Agosto 2025", 
     points: [
       "Desenvolvimento de aplicativos móveis em Flutter para iOS e Android, focando em desempenho e experiência de usuário, com BLoC e GetX.",
@@ -166,7 +166,7 @@ const technologies = [
     title: "Desenvolvedor Front-end Pleno",
     company_name: "Porto Seguro",
     icon: porto,
-    iconBg: "#00a2ff",
+    iconBg: "#E6DEDD",
     date: "Julho 2023 - Dezembro 2023",
     points: [
       "Criação e otimização de landing pages para maximizar a conversão de usuários.",
@@ -205,7 +205,7 @@ const technologies = [
     title: "UI/UX Designer",
     company_name: "Hotmart",
     icon: hotmart,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "Março 2020 - Outubro 2020",
     points: [
       "Desenvolvimento de habilidades em UI/UX para produtos digitais.",
