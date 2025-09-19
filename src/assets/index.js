@@ -30,6 +30,7 @@ import tivit from "./company/tivit.png";
 import lambda from "./company/lambda.png";
 import porto from "./company/porto.png";
 import brasilcard from "./company/brasilcard.png";
+import tokiomarine from "./company/tokiomarine.png";
 
 import flappy from "./flappy.jpg";
 import podcast from "./podcast.jpg";
@@ -101,4 +102,5 @@ export {
   tripguide,
   porto,
   brasilcard,
+  tokiomarine,
 };

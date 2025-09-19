@@ -43,6 +43,7 @@ import {
   threejs,
   porto,
   brasilcard,
+  tokiomarine,
 } from "../assets";
 
 export const navLinks = [
@@ -134,14 +135,26 @@ const technologies = [
   },
 ];
 
-const experiences = [
-
+ const experiences = [
+  {
+    title: "Desenvolvedor Flutter Pleno",
+    company_name: "Tokio Marine",
+    icon: tokiomarine, 
+    iconBg: "#E6DEDD",
+    date: "Agosto 2025 - Atual",
+    points: [
+      "Desenvolvimento e manutenção do aplicativo principal da companhia em Flutter, aplicando padrões como Clean Architecture e MVVM.",
+      "Otimização de pipelines de CI/CD com Jenkins para automação de builds, testes e deploys.",
+      "Colaboração em ambiente ágil (Scrum/Kanban) e gestão de tarefas com Jira para garantir alinhamento e entregas contínuas.",
+      "Competências: Flutter · Dart · Clean Architecture · MVVM · Jenkins · CI/CD · Git · Jira · Scrum",
+    ],
+  },
   {
     title: "Desenvolvedor Front-end Pleno",
     company_name: "Brasil Card",
     icon: brasilcard,
     iconBg: "#383E56",
-    date: "Fevereiro 2024 - Atual",
+    date: "Fevereiro 2024 - Agosto 2025", 
     points: [
       "Desenvolvimento de aplicativos móveis em Flutter para iOS e Android, focando em desempenho e experiência de usuário, com BLoC e GetX.",
       "Automatização de construção e distribuição via CI/CD com CodeMagic e criação de um sistema de design consistente.",
