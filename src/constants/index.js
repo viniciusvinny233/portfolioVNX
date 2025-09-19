@@ -153,7 +153,7 @@ const technologies = [
     title: "Desenvolvedor Front-end Pleno",
     company_name: "Brasil Card",
     icon: brasilcard,
-    iconBg: "#383E56",
+    iconBg: "#104d7f",
     date: "Fevereiro 2024 - Agosto 2025", 
     points: [
       "Desenvolvimento de aplicativos móveis em Flutter para iOS e Android, focando em desempenho e experiência de usuário, com BLoC e GetX.",
@@ -166,7 +166,7 @@ const technologies = [
     title: "Desenvolvedor Front-end Pleno",
     company_name: "Porto Seguro",
     icon: porto,
-    iconBg: "#E6DEDD",
+    iconBg: "#00a2ff",
     date: "Julho 2023 - Dezembro 2023",
     points: [
       "Criação e otimização de landing pages para maximizar a conversão de usuários.",
@@ -179,7 +179,7 @@ const technologies = [
     title: "Desenvolvedor de software",
     company_name: "Lambda3",
     icon: lambda,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "Junho 2022 - Junho 2023",
     points: [
       "Especialização no desenvolvimento de aplicações web e móveis.",
