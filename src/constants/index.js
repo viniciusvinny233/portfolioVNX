@@ -176,30 +176,17 @@ const technologies = [
     ],
   },
   {
-    title: "Desenvolvedor de software",
-    company_name: "Lambda3",
-    icon: lambda,
-    iconBg: "#E6DEDD",
-    date: "Junho 2022 - Junho 2023",
-    points: [
-      "Especialização no desenvolvimento de aplicações web e móveis.",
-      "Criação de interfaces de usuário otimizadas para usabilidade e acessibilidade.",
-      "Atuação em desenvolvimento cross-platform, otimizando a experiência do usuário em diversas plataformas​​.",
-      "Competências: HTML · Javascript · CSS · Figma  Typescript · React.js · Node.js · Next.js · Flutter · React Native",
-    ],
-  },
-  {
-    title: "Desenvolvedor Full Stack",
+    title: "Engenheiro de Software Full Stack",
     company_name: "TIVIT",
-    icon: tivit,
+    icon: tivit, 
     iconBg: "#E6DEDD",
-    date: "Outubro 2020 - Junho 2022",
+    date: "Outubro 2020 - Junho 2023",
     points: [
-      "Versatilidade em projetos diversificados, adaptando-se a novas tecnologias.",
-      "Contribuição efetiva em múltiplas equipes de desenvolvimento.",
-      "Engajamento em todas as fases de desenvolvimento de software​​.",
-      "Competências: HTML · Javascript · CSS · Typescript · SASS · jQuery React.js · Bootstrap · Node.js · Next.js · Flutter · React Native",
-    ],
+      "Atuação estratégica no ecossistema TIVIT Ventures (incluindo a integração com a Lambda3), participando de projetos de alta performance com foco em modernização de aplicações.",
+      "Desenvolvimento Cross-Platform (Web & Mobile): Criação de soluções robustas e interfaces otimizadas para UX/UI, garantindo acessibilidade e consistência entre plataformas.",
+      "Ciclo Completo de Desenvolvimento (SDLC): Engajamento desde a concepção arquitetural até o deploy, atuando com metodologias ágeis e adaptação rápida a novas tecnologias.",
+      "Competências Core: TypeScript · React.js · Node.js · Next.js · Flutter · React Native · Design Systems (Figma)."
+    ]
   },
   {
     title: "UI/UX Designer",
