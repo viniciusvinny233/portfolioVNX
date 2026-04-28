@@ -1,58 +1,55 @@
-import React from "react";
-import Tilt from 'react-parallax-tilt';
-import { motion } from "framer-motion";
-
-import { styles } from "../styles";
-import { services } from "../constants";
+﻿import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import { useLang } from "../contexts/LanguageContext";
+import { content } from "../constants/content";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-16 h-16 object-contain"
-        />
-
-        <h3 className="text-white text-[20px] font-bold text-center">
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
+const PillarCard = ({ icon, title, description, index }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: index * 0.15 }}
+    className="flex-1 min-w-[240px] bg-[#1d1836] border border-[#ffffff0a] rounded-2xl p-7 hover:border-[#915EFF40] transition-all duration-300"
+  >
+    <span className="text-4xl">{icon}</span>
+    <h3 className="text-white font-bold text-[18px] mt-4 mb-2">{title}</h3>
+    <p className="text-secondary text-[14px] leading-relaxed">{description}</p>
+  </motion.div>
 );
 
 const About = () => {
+  const { lang } = useLang();
+  const t = content[lang].about;
+
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introdução</p>
-        <h2 className={styles.sectionHeadText}>Sobre mim.</h2>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <p className="sm:text-[19px] text-[15px] text-secondary uppercase tracking-wider">
+          {t.subtitle}
+        </p>
+        <h2 className="text-white font-black md:text-[68px] sm:text-[56px] xs:text-[44px] text-[32px]">
+          {t.title}
+        </h2>
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="mt-4 text-secondary text-[16px] max-w-3xl leading-[1.8]"
       >
-        Especialista em desenvolvimento Front-end, possuo um portfólio abrangente que inclui interfaces web altamente responsivas e aplicações móveis de alto desempenho. Tenho uma competência avançada em uma gama de tecnologias contemporâneas como Flutter e React.js, as quais utilizo para entregar soluções técnicas de alto nível e arquitetura de software sofisticada.
+        {t.description}
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+      <div className="mt-10 flex flex-wrap gap-5">
+        {t.pillars.map((p, i) => (
+          <PillarCard key={i} index={i} {...p} />
         ))}
       </div>
     </>
@@ -60,3 +57,4 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+

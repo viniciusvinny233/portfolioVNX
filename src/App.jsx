@@ -3,31 +3,41 @@ import { HashRouter } from "react-router-dom";
 import {
   About,
   Contact,
+  Education,
   Experience,
   Feedbacks,
   Hero,
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
 } from "./components";
+import Footer from "./components/Footer";
+import GalaxyBackground from "./components/GalaxyBackground";
 
 const App = () => {
   return (
     <HashRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div
+        className="relative"
+        style={{
+          background:
+            "radial-gradient(ellipse at 18% 22%, rgba(145,94,255,0.10) 0%, transparent 52%), " +
+            "radial-gradient(ellipse at 82% 78%, rgba(79,195,247,0.06) 0%, transparent 48%), " +
+            "#020410",
+        }}
+      >
+        <GalaxyBackground />
+        <div className="relative" style={{ zIndex: 2 }}>
           <Navbar />
           <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className="relative z-0">
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <Feedbacks />
+          <Education />
           <Contact />
-          <StarsCanvas />
+          <Footer />
         </div>
       </div>
     </HashRouter>

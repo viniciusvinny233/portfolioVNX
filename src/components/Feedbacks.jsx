@@ -1,166 +1,79 @@
-import { motion } from "framer-motion";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import { styles } from "../styles";
+﻿import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
+import { useLang } from "../contexts/LanguageContext";
+import { content, testimonials } from "../constants/content";
 
-const FeedbackCard = ({
-  index,
-  testimonial,
-  name,
-  designation,
-  company,
-  image,
-}) => (
+const TestimonialCard = ({ item, index }) => (
   <motion.div
-    variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-5 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl w-full max-w-[340px] mx-auto min-h-[400px] flex flex-col justify-between"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: index * 0.06 }}
+    className="bg-[#1d1836] border border-[#ffffff0a] hover:border-[#915EFF30] rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300"
   >
-    <div>
-      <p className="text-white font-black text-[36px] sm:text-[42px]">"</p>
-      <p className="text-white tracking-wider text-[0.75rem] sm:text-[0.8rem] mt-2">{testimonial}</p>
-    </div>
+    {/* Quote icon */}
+    <div className="text-[#915EFF] text-[40px] leading-none font-serif select-none">"</div>
 
-    <div className="mt-auto pt-6 flex justify-between items-center gap-1">
-      <div className="flex-1 flex flex-col">
-        <p className="text-white font-medium text-[14px] sm:text-[16px]">
-          <span className="blue-text-gradient">@</span> {name}
-        </p>
-        <p className="mt-1 text-secondary text-[10px] sm:text-[12px]">
-          {designation} of {company}
-        </p>
-      </div>
+    {/* Testimonial text */}
+    <p className="text-secondary text-[14px] leading-[1.75] flex-1 -mt-3">
+      {item.testimonial}
+    </p>
 
+    {/* Person */}
+    <div className="flex items-center gap-3 pt-4 border-t border-[#ffffff08]">
       <img
-        src={image}
-        alt={`feedback_by-${name}`}
-        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
+        src={item.image}
+        alt={item.name}
+        className="w-11 h-11 rounded-full object-cover border-2 border-[#915EFF30]"
       />
+      <div className="flex-1 min-w-0">
+        <p className="text-white font-semibold text-[14px] truncate">{item.name}</p>
+        <p className="text-secondary text-[12px] truncate">{item.designation}</p>
+        <p className="text-[#915EFF] text-[12px] font-medium truncate">{item.company}</p>
+      </div>
+      <a
+        href={item.linkedin}
+        target="_blank"
+        rel="noreferrer"
+        className="flex-shrink-0 w-8 h-8 rounded-full bg-[#0077B5] hover:bg-[#005885] flex items-center justify-center transition-colors"
+        title="View on LinkedIn"
+      >
+        <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+      </a>
     </div>
   </motion.div>
 );
 
-const NextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="slick-next text-white text-sm sm:text-1xl p-1 sm:p-2 rounded-full bg-gray-600 bg-opacity-70 hover:bg-opacity-100 transition-all duration-200 flex items-center justify-center z-10"
-      onClick={onClick}
-      style={{ 
-        right: '25px', 
-        width: '30px', 
-        height: '30px'
-      }}
-    >
-      &#8594;
-    </div>
-  );
-};
-
-const PrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="slick-prev text-white text-sm sm:text-1xl p-1 sm:p-2 rounded-full bg-gray-600 bg-opacity-70 hover:bg-opacity-100 transition-all duration-200 flex items-center justify-center z-10"
-      onClick={onClick}
-      style={{ 
-        left: '25px', 
-        width: '30px', 
-        height: '30px'
-      }}
-    >
-      &#8592;
-    </div>
-  );
-};
-
 const Feedbacks = () => {
-  const settings = {
-    infinite: true,
-    speed: 800,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    dots: true,
-    variableWidth: false,
-    centerMode: false,
-    responsive: [
-      {
-        breakpoint: 2200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1700,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 3000,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 2500,
-        },
-      },
-    ],
-  };
+  const { lang } = useLang();
+  const t = content[lang].testimonials;
 
   return (
-    <div className="w-screen relative left-[calc(-50vw+49.5%)] mt-12 bg-black-100 overflow-hidden">
-      <div className={`${styles.padding} bg-tertiary min-h-[200px] sm:min-h-[250px] md:min-h-[300px] text-center`}>
-        <div className="container mx-auto">
-          <motion.div variants={textVariant()}>
-            <p className={`${styles.sectionSubText} text-sm sm:text-base`}>recomendações do linkedin</p>
-            <h2 className={`${styles.sectionHeadText} text-2xl sm:text-3xl md:text-4xl lg:text-5xl`}>Feedbacks.</h2>
-          </motion.div>
-        </div>
-      </div>
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <p className="sm:text-[19px] text-[15px] text-secondary uppercase tracking-wider">
+          {t.subtitle}
+        </p>
+        <h2 className="text-white font-black md:text-[68px] sm:text-[56px] xs:text-[44px] text-[32px]">
+          {t.title}
+        </h2>
+      </motion.div>
 
-      <div className="-mt-16 sm:-mt-18 md:-mt-20 pb-7 container mx-auto">
-        <Slider {...settings} className="slider-container">
-          {testimonials.map((testimonial, index) => (
-            <div key={testimonial.name} className="px-2 sm:px-3 md:px-4 py-2">
-              <FeedbackCard index={index} {...testimonial} />
-            </div>
-          ))}
-        </Slider>
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+        {testimonials.map((item, i) => (
+          <TestimonialCard key={i} item={item} index={i} />
+        ))}
       </div>
-    </div>
+    </>
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, "testimonials");
+
