@@ -51,7 +51,7 @@ export const testimonials = [
   },
   {
     testimonial:
-      "Tive a experiência gratificante de trabalhar com o Marcos em um projeto de desenvolvimento mobile utilizando Flutter, onde ele demonstrou excelentes habilidades tanto em UX design quanto na criação da estrutura frontend. Suas contribuições foram essenciais para o sucesso do projeto.",
+      "Eu tive o prazer de ver o trabalho de Marcos em várias ocasiões e fiquei extremamente impressionado com suas habilidades como desenvolvedor React. Marcos tem um profundo conhecimento do React e é capaz de aplicá-lo de maneira criativa para resolver problemas complexos.",
     name: "Lucas da Costa",
     designation: "Analista de Sistemas",
     company: "Amper",
