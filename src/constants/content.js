@@ -90,7 +90,7 @@ export const content = {
     },
     about: {
       subtitle: "Introduction",
-      title: "Who I Am.",
+      title: "Who I Am",
       description:
         "Senior Mobile Engineer specialized in Flutter & Dart for the financial, banking and insurance markets. I work end-to-end — from architecture design to App Store and Google Play deployment — building products that balance technical robustness with business outcomes.",
       pillars: [
@@ -116,7 +116,7 @@ export const content = {
     },
     experience: {
       subtitle: "What I've done so far",
-      title: "Experience.",
+      title: "Experience",
       entries: [
         {
           title: "Mobile Engineer",
@@ -174,7 +174,7 @@ export const content = {
     },
     skills: {
       subtitle: "What I work with",
-      title: "Tech Stack.",
+      title: "Tech Stack",
       categories: [
         {
           title: "Mobile",
@@ -195,7 +195,7 @@ export const content = {
         {
           title: "Web",
           tags: [
-            { name: "React.js", primary: false },
+            { name: "React.js", primary: true },
             { name: "TypeScript", primary: true },
             { name: "JavaScript", primary: true },
             { name: "Next.js", primary: false },
@@ -207,7 +207,7 @@ export const content = {
         {
           title: "Architecture & Quality",
           tags: [
-            { name: "Clean Architecture", primary: true },
+            { name: "Clean Architecture", primary: false },
             { name: "SOLID", primary: false },
             { name: "MVVM", primary: false },
             { name: "MVC", primary: false },
@@ -222,7 +222,7 @@ export const content = {
         {
           title: "Cloud & Tools",
           tags: [
-            { name: "Firebase", primary: true },
+            { name: "Firebase", primary: false },
             { name: "Supabase", primary: false },
             { name: "Python", primary: false },
             { name: "FastAPI", primary: false },
@@ -240,7 +240,7 @@ export const content = {
     },
     projects: {
       subtitle: "My work",
-      title: "Projects.",
+      title: "Projects",
       personalLabel: "SaaS & Personal",
       companyLabel: "Professional Work",
       visitLabel: "Visit",
@@ -312,12 +312,12 @@ export const content = {
     },
     testimonials: {
       subtitle: "What others say",
-      title: "Testimonials.",
+      title: "Testimonials",
       linkedinLabel: "View on LinkedIn",
     },
     education: {
       subtitle: "My background",
-      title: "Education & Languages.",
+      title: "Education & Languages",
       educationLabel: "Education",
       certificationsLabel: "Certifications",
       languagesLabel: "Languages",
@@ -354,7 +354,7 @@ export const content = {
     },
     connect: {
       subtitle: "Get in touch",
-      title: "Let's Connect.",
+      title: "Let's Connect",
       description:
         "Open to new opportunities, collaborations or just a good conversation about tech. Reach out through any of the channels below.",
       links: [
